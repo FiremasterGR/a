@@ -1,0 +1,22 @@
+div{
+    width: 300px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+input{
+    background-color:hsl(180, 53%, 90%);
+    font-size: 20px;
+    height: 25px;
+    border-radius: 5px;
+}
+body{
+    background-color: lightblue;
+}
+form{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin: 10px 5px;
+}

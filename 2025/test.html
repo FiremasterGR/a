@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<head></head>
+<body>
+<input type="text" id="username" onkeyup="usercheck()">
+<P id="error"> this is a test</P>
+<script>
+  async function usercheck(){
+    var username=document.getElementById('username').value;
+    var formData = new Formdata();
+    formData.append('username', username);
+    var response = await fetch('usercheck.php', {
+            method: 'POST',
+            body: formData
+        });
+   var data = await response.json();
+   booleanResponse=data.success;
+   document.getElementById('error').innerHTML=booleanResponse;}
+</script>
+</body>
+</html>
